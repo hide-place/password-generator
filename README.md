@@ -40,7 +40,7 @@ Check out the live demo [here](https://hide-place.github.io/password-generator/i
 
 ## Usage
 
-1. Open `passwordGenerator.html` in your preferred web browser.
+1. Open `index.html` in your preferred web browser.
 
 2. Use the input fields and checkboxes to customize the password options:
     - **Length of password**: Specify the desired length of the password.
