@@ -119,12 +119,17 @@ const specialChars = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ','
 
 // Function to generate password
 function generatePassword() {
+    
     let availableChars = lowerLetters.slice();  // Start with lower case letters
-    const passwordLen = parseInt(passwordLength.value);
-    const isUpperCaseIncluded = includeUpperCase.checked;
+    if(passwordLength.value > 0 ){
+        const passwordLen = parseInt(passwordLength.value); 
+        passwordOutput.style.color = 'black';
+
+
+        const isUpperCaseIncluded = includeUpperCase.checked;
     const isNumbersIncluded = includeNumbers.checked;
     const isSpecialCharsIncluded = includeSpecialChars.checked;
-
+    
     // Add characters based on selected options
     if (isUpperCaseIncluded) {
         availableChars = availableChars.concat(upperLetters);
@@ -145,6 +150,17 @@ function generatePassword() {
     // Create the password by slicing the shuffled array
     const password = availableChars.slice(0, passwordLen).join('');
     passwordOutput.value = password;
+
+    }
+    else{
+
+        passwordOutput.style.color = 'red';
+        passwordOutput.value = 'Choose a number greater than 0';
+
+
+    }
+  
+
 }
 
 // Add event listener to generate button
