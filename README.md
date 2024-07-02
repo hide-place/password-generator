@@ -4,7 +4,7 @@ A simple password generator web application that allows users to create strong a
 
 ## Try it out
 
-Check out the live demo [here](https://hide-place.github.io/password-generator).
+Check out the live demo [here](https://hide-place.github.io/password-generator/index.html).
 
 
 ## Table of Contents
