@@ -2,6 +2,11 @@
 
 A simple password generator web application that allows users to create strong and customizable passwords. Users can specify the length of the password and choose to include uppercase letters, numbers, and special characters.
 
+## Try it out
+
+Check out the live demo [here](https://hide-place.github.io/password-generator).
+
+
 ## Table of Contents
 
 - [Features](#features)
